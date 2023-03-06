@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1019675343968",
+    "project_id": "telotengo-app",
+    "storage_bucket": "telotengo-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019675343968:android:2042848d7d0b6c35369705",
+        "android_client_info": {
+          "package_name": "com.salvadorc03.telotengoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019675343968-cacchmq3m8mujkaf25evbvt4nbtjns3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salvadorc03.telotengoapp",
+            "certificate_hash": "22f726e77698dc29393dc39bf1e1d0c8e14b6588"
+          }
+        },
+        {
+          "client_id": "1019675343968-u75m7olo8b4agmnvua11giiripl25ol4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salvadorc03.telotengoapp",
+            "certificate_hash": "b7cc1b29569d36e71240e260fa5e9cd164d2b317"
+          }
+        },
+        {
+          "client_id": "1019675343968-87dlsgtp50oouvsgjrp18aaherp9kil0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD252_qgC4Zo-S7dioYudfNgPTiGlYPKJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019675343968-87dlsgtp50oouvsgjrp18aaherp9kil0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+  body: {
+    backgroundColor: "#026666",
+    position: "absolute",
+    width: "100%",
+    //height: "100%",
+    height: 400,
+    flex: 0,
+    borderBottomRightRadius: 32,
+    borderBottomLeftRadius: 32,
+  },
+  container: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
+    paddingBottom: "5%",
+    backgroundColor: "white",
+    width: "85%",
+    height: "59%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    borderRadius: 12,
+  },
+  "header-text": {
+    color: "white",
+    fontWeight: "900",
+    fontSize: 40,
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginBottom: 25,
+  },
+  "welcome-text": {
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginTop: "6%",
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#4F008C",
+    fontFamily: "Poppins",
+  },
+  input: {
+    marginTop: "5%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    backgroundColor: "#F1F3F6",
+    height: 54,
+    fontSize: 14,
+    width: "95%",
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderRadius: 20,
+    fontWeight: "bold",
+  },
+  "invalid-input": {
+    backgroundColor: "#ff4f4f",
+  },
+  button: {
+    width: "95%",
+    height: 54,
+    marginLeft: "auto",
+    marginRight: "auto",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "10%",
+    borderRadius: 20,
+  },
+  "enabled-button": {
+    backgroundColor: "#FF8E01",
+  },
+  "disabled-button": {
+    backgroundColor: "#ffc680",
+  },
+  "button-text": {
+    color: "white",
+    fontWeight: "bold",
+  },
+  "options-text": {
+    fontSize: 12,
+    fontFamily: "Poppins",
+    fontWeight: "bold",
+    color: "#B3B3B3",
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  logo: {
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  message: {
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+});

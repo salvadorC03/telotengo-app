@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useContext } from "react";
+import StartScreen from "./screens/StartScreen/StartScreen";
+import LoginScreen from "./screens/LoginScreen/LoginScreen";
+import ContextProvider, { Context } from "./store/context";
+import { NavigationContainer } from "@react-navigation/native";
 
-export default function App() {
+export default function AppRoot() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ContextProvider>
+      <NavigationContainer>
+        <App />
+      </NavigationContainer>
+    </ContextProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+function App() {
+  const context = useContext(Context);
+
+  if (context.initializing) return null;
+
+  return <>{context.user ? <StartScreen /> : <LoginScreen />}</>;
+}
