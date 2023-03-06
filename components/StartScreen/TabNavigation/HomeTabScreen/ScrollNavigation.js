@@ -5,6 +5,13 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 function NavigationRoutes() {
   const Stack = createNativeStackNavigator();
+
+  return (
+    <Stack.Navigator>
+      <Stack.Screen 
+      name="FoodScreen"/>
+    </Stack.Navigator>
+  );
 }
 
 export default function ScrollNavigation() {
