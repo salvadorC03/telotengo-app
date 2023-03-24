@@ -13,7 +13,6 @@ export function useLoading() {
 
     return () => clearTimeout(timeout);
   };
-  const spinner = <AntDesign name="loading1" size={24} color="black" />;
 
-  return { message, setMessage, isLoading, setIsLoading, spinner, cleanup };
+  return { message, setMessage, isLoading, setIsLoading, cleanup };
 }

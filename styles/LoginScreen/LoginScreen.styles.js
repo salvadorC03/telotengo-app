@@ -5,7 +5,6 @@ export default StyleSheet.create({
     backgroundColor: "#026666",
     position: "absolute",
     width: "100%",
-    //height: "100%",
     height: 400,
     flex: 0,
     borderBottomRightRadius: 32,
@@ -19,7 +18,6 @@ export default StyleSheet.create({
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-
     elevation: 5,
     paddingBottom: "5%",
     backgroundColor: "white",

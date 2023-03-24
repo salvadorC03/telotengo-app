@@ -6,6 +6,11 @@ import { useLoading } from "../../../hooks/useLoading";
 import Spinner from "react-native-loading-spinner-overlay";
 
 export default function OptionsTabScreen() {
+  GoogleSignin.configure({
+    webClientId:
+      "1019675343968-87dlsgtp50oouvsgjrp18aaherp9kil0.apps.googleusercontent.com",
+  });
+
   const errorHandler = (error) => console.log(error.message);
   const loadingState = useLoading();
 
