@@ -29,6 +29,11 @@ export default function ContextProvider(props) {
     selectedShop,
     setSelectedShop,
   };
+
+  if (initializing) {
+    return null;
+  }
+
   return (
     <Context.Provider value={contextValue}>{props.children}</Context.Provider>
   );

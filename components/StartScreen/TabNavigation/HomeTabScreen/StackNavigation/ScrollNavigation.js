@@ -23,6 +23,7 @@ export default function ScrollNavigation() {
         <Text style={styles["scroll-item-text"]}>COMIDA</Text>
       </Pressable>
       <Pressable
+       onPress={() => navigation.navigate("JewelryScreen")}
         style={{ ...styles["scroll-item"], backgroundColor: "#05A2FF" }}
       >
         <FolderIcon style={styles["folder-icon"]} />

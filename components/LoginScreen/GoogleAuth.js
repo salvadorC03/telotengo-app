@@ -31,7 +31,7 @@ export default function GoogleAuth(props) {
   return (
     <GoogleSigninButton
       disabled={props.isLoading}
-      style={{ width: "100%", height: 60 }}
+      style={{ width: 60, height: 60 }}
       onPress={onGoogleButtonPress}
     />
   );

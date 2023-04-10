@@ -17,7 +17,5 @@ export default function AppRoot() {
 function App() {
   const context = useContext(Context);
 
-  if (context.initializing) return null;
-
   return <>{context.user ? <StartScreen /> : <LoginScreen />}</>;
 }

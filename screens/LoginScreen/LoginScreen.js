@@ -109,12 +109,17 @@ export default function LoginScreen() {
           {!isRegistering && (
             <View
               style={{
-                width: "80%",
-                marginLeft: "auto",
-                marginRight: "auto",
+                width: "100%",
                 marginTop: 20,
+                alignItems: "center",
               }}
             >
+              <FacebookAuth
+                setIsLoading={loadingState.setIsLoading}
+                onError={(error) =>
+                  loadingState.setMessage(<Text>{error.message}</Text>)
+                }
+              />
               <GoogleAuth
                 setIsLoading={loadingState.setIsLoading}
                 onError={(error) =>
