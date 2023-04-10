@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import Spinner from "react-native-loading-spinner-overlay";
 import styles from "../../../../../styles/StartScreen/TabNavigation/ShopScreen.styles";
 import { TextInput } from "react-native-paper";
@@ -54,17 +54,19 @@ export default function ClothingScreen() {
           >
             Todo
           </Text>
-          {data.shopList.map((shop) => (
-            <View style={styles["shop-item"]} key={shop.id}>
-              <View style={styles["shop-item-group"]}>
-                <Image
-                  style={styles["shop-item-picture"]}
-                  source={{ uri: shop.photoURL }}
-                />
-                <Text style={styles["shop-item-name"]}>{shop.name}</Text>
+          <ScrollView>
+            {data.shopList.map((shop) => (
+              <View style={styles["shop-item"]} key={shop.id}>
+                <View style={styles["shop-item-group"]}>
+                  <Image
+                    style={styles["shop-item-picture"]}
+                    source={{ uri: shop.photoURL }}
+                  />
+                  <Text style={styles["shop-item-name"]}>{shop.name}</Text>
+                </View>
               </View>
-            </View>
-          ))}
+            ))}
+          </ScrollView>
         </>
       )}
       {data.message && <View>{data.message}</View>}

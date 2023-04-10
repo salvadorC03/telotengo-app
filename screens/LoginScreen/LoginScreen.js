@@ -114,12 +114,6 @@ export default function LoginScreen() {
                 alignItems: "center",
               }}
             >
-              <FacebookAuth
-                setIsLoading={loadingState.setIsLoading}
-                onError={(error) =>
-                  loadingState.setMessage(<Text>{error.message}</Text>)
-                }
-              />
               <GoogleAuth
                 setIsLoading={loadingState.setIsLoading}
                 onError={(error) =>

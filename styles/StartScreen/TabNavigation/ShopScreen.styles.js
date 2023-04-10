@@ -35,6 +35,7 @@ export default StyleSheet.create({
   "shop-item": {
     marginLeft: "auto",
     marginRight: "auto",
+    marginBottom: 10,
     backgroundColor: "#F1F3F6",
     width: "90%",
     height: 100,
