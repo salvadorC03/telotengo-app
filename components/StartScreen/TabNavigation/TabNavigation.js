@@ -1,6 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeTabScreen from "./HomeTabScreen/HomeTabScreen";
-import OptionsTabScreen from "./OptionsTabScreen";
 import HomeActiveIcon from "../../../assets/home-active-icon.svg";
 import HomeInactiveIcon from "../../../assets/home-inactive-icon.svg";
 import FolderActiveIcon from "../../../assets/folder-active-icon";
@@ -68,7 +67,7 @@ export default function TabNavigation() {
           },
         }}
         name="User"
-        component={OptionsTabScreen}
+        component={DefaultComponent}
       />
     </Tab.Navigator>
   );

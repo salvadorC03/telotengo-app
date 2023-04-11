@@ -80,10 +80,9 @@ export default function RegisterForm(props) {
         style={phoneNumber.inputStyles(styles)}
         placeholder="Teléfono"
       />
-      {props.message && <View style={styles.message}>{props.message}</View>}
       <Pressable
         disabled={!formIsValid}
-        style={buttonStyles}
+        style={({ pressed }) => [buttonStyles, pressed && { opacity: 0.7 }]}
         onPress={submitHandler}
       >
         <Text style={styles["button-text"]}>REGISTRAR</Text>

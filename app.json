@@ -1,5 +1,16 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "3365407540364607",
+          "clientToken": "7709977c42e9b0f3a49dc91f2eb02a5c",
+          "displayName": "telotengo-app",
+          "scheme": "fb3365407540364607"
+        }
+      ]
+    ],
     "name": "telotengo-app",
     "slug": "telotengo-app",
     "version": "1.0.0",

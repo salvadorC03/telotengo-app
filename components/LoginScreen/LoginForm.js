@@ -40,10 +40,14 @@ export default function LoginForm(props) {
         style={password.inputStyles(styles)}
         placeholder="Contraseña"
       />
-      {props.message && <View style={styles.message}>{props.message}</View>}
       <Pressable
         disabled={!formIsValid}
-        style={buttonStyles}
+        style={({pressed}) => {
+          return [
+            buttonStyles,
+            pressed && {opacity: 0.7}
+          ]
+        }}
         onPress={submitHandler}
       >
         <Text style={styles["button-text"]}>ENTRAR</Text>

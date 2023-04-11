@@ -9,22 +9,31 @@ export default function ScrollNavigation() {
   return (
     <ScrollView style={{ flex: 1 }} horizontal={true}>
       <Pressable
-      onPress={() => navigation.navigate("ClothingScreen")}
-        style={{ ...styles["scroll-item"], backgroundColor: "#026666" }}
+        onPress={() => navigation.navigate("ClothingScreen")}
+        style={({ pressed }) => [
+          { ...styles["scroll-item"], backgroundColor: "#026666" },
+          pressed && { opacity: 0.7 },
+        ]}
       >
         <FolderIcon style={styles["folder-icon"]} />
         <Text style={styles["scroll-item-text"]}>ROPA</Text>
       </Pressable>
       <Pressable
-      onPress={() => navigation.navigate("FoodScreen")}
-        style={{ ...styles["scroll-item"], backgroundColor: "#FF814B" }}
+        onPress={() => navigation.navigate("FoodScreen")}
+        style={({ pressed }) => [
+          { ...styles["scroll-item"], backgroundColor: "#FF814B" },
+          pressed && { opacity: 0.7 },
+        ]}
       >
         <FolderIcon style={styles["folder-icon"]} />
         <Text style={styles["scroll-item-text"]}>COMIDA</Text>
       </Pressable>
       <Pressable
-       onPress={() => navigation.navigate("JewelryScreen")}
-        style={{ ...styles["scroll-item"], backgroundColor: "#05A2FF" }}
+        onPress={() => navigation.navigate("JewelryScreen")}
+        style={({ pressed }) => [
+          { ...styles["scroll-item"], backgroundColor: "#05A2FF" },
+          pressed && { opacity: 0.7 },
+        ]}
       >
         <FolderIcon style={styles["folder-icon"]} />
         <Text style={styles["scroll-item-text"]}>ACCESORIOS</Text>
@@ -32,7 +41,10 @@ export default function ScrollNavigation() {
 
       <Pressable
         onPress={() => navigation.navigate("TravelScreen")}
-        style={{ ...styles["scroll-item"], backgroundColor: "#E9027E" }}
+        style={({ pressed }) => [
+          { ...styles["scroll-item"], backgroundColor: "#E9027E" },
+          pressed && { opacity: 0.7 },
+        ]}
       >
         <FolderIcon style={styles["folder-icon"]} />
         <Text style={styles["scroll-item-text"]}>VIAJES</Text>
